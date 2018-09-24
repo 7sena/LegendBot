@@ -28,6 +28,7 @@ client.on('message', async message => {
         if(message.channel.type === 'dm') return;
  
         var modRole = message.guild.roles.find(r => r.name === '✿『 MC ┃ Builder 』✿');// Alpha Codes
+        var msgS = message.guild.roles.find(r => r.name === '✲ SUPPORT');
        
         if(message.guild.member(message.author).roles.has(modRole.id)) return message.channel.send(':x: | معك الرتبة');// Alpha Codes
         if(!subChannel) return message.channel.send(':x: | يجب ان يتوفر روم اسمه `تقديم`');// Alpha Codes
