@@ -99,12 +99,12 @@ client.on('message', async message => {
                                                         msgS.delete();
                                                         message.author.send(`:white_check_mark: | تم قبولك اداري بسيرفر **${message.guild.name}**`);
                                                         message.guild.member(message.author).addRole(modRole.id);
-                                                        message.guild.channels.find(r => r.name === '✿『 MC ┃ Owner 』✿', '✿『 Discord ┃ Manager 』✿').send(`:white_check_mark: | تم قبولك [ <@${message.author.id}> ]`);
+                                                        message.guild.channels.find(r => r.name === 'تم-القبول-و-الرفض').send(`:white_check_mark: | تم قبولك [ <@${message.author.id}> ]`);
                                                     }).catch();
                                                     noAcceptRe.on('collect', r => {
                                                         msgS.delete();
                                                         message.author.send(`:x: | تم رفضك بسيرفر **${message.guild.name}**`);
-                                                        message.guild.channels.find(r => r.name === '✿『 MC ┃ Owner 』✿', '✿『 Discord ┃ Manager 』✿').send(`:x: | تم رفضك [ <@${message.author.id}> ]`);
+                                                        message.guild.channels.find(r => r.name === 'تم-القبول-و-الرفض').send(`:x: | تم رفضك [ <@${message.author.id}> ]`);
                                                     }).catch();
                                                 })
                                             });// Alpha Codes
