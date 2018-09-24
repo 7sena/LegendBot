@@ -24,7 +24,7 @@ client.on('message', async message => {
     var filter = m => m.author.id === message.author.id;// Alpha Codes
     var subChannel = message.guild.channels.find(c => c.name === 'تقديم');// Alpha Codes
    
-    if(command == prefix + 'builder-support') {// Alpha Codes
+    if(command == prefix + 'تقديم') {// Alpha Codes
         if(message.author.bot) return;
         if(message.channel.type === 'dm') return;
  
